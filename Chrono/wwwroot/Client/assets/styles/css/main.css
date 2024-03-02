@@ -1,0 +1,1185 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  --font-heading-family: "Tajawal", sans-serif;
+  --font-body-family: "Jura", sans-serif;
+  --text-primary: #101828;
+  --text-secondary: #667085;
+  --badge-bg: #ecfdf3;
+  --badge-text: #027a48;
+  --white: #fff;
+  --black: #000;
+  --dropdown-bg: rgb(252, 253, 251);
+  --shadow: rgba(32, 7, 65, 0.14);
+  --container: 124rem;
+  --nav-height: 7rem;
+}
+
+.container-nav {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--nav-height);
+  position: relative;
+  background: var(--black);
+  padding: 40px;
+}
+
+.nav_list {
+  display: inline-flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+
+.nav_action {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav_action a {
+  color: #ffffff;
+  transition: color 0.3s ease;
+  font-size: 15px;
+}
+.nav_action a:hover {
+  color: #9F7A49;
+}
+
+.nav_link {
+  color: var(--white);
+  font-family: "Jura", sans-serif;
+  transition: color 0.4s ease;
+}
+.nav_link:hover {
+  color: #9F7A49;
+}
+
+.nav_toggle {
+  cursor: pointer;
+  display: none;
+}
+.nav_toggle ion-icon {
+  font-size: 3.5rem;
+  color: var(--text-primary);
+}
+
+.dropdown {
+  position: absolute;
+  top: var(--nav-height);
+  left: 1%;
+  width: 98%;
+  background: var(--dropdown-bg);
+  box-shadow: 0rem 0.2rem 0.5rem var(--shadow);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: all 0.5s ease-in;
+  z-index: 9999;
+}
+
+.dropdown-pages {
+  position: absolute;
+  top: 4rem;
+  left: 62.5%;
+  width: max-content;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: all 0.5s ease-in;
+  z-index: 9999;
+}
+
+.dropdown-pages-item {
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-inner {
+  display: flex;
+  padding: 0 10px 0 10px;
+}
+
+.nav_list_menu:hover ion-icon {
+  transition: all 0.5s ease-in;
+  transform: rotate(180deg);
+}
+.nav_list_menu:hover .dropdown,
+.nav_list_menu:hover .dropdown-pages {
+  clip-path: polygon(0 0, 100% 0, 100% 102%, 0 102%);
+}
+
+.item-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0;
+  max-width: 80%;
+}
+
+.item-img {
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-item-img {
+  max-width: 100%;
+}
+
+.dropdown-item {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-pages-item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.item-list-info {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: var(--black);
+  margin-top: 10px;
+  padding: 8px;
+}
+
+.item-list-info-pages {
+  position: relative;
+  width: 225px;
+  background-color: var(--white);
+  padding: 8px;
+}
+.item-list-info-pages ul li {
+  padding: 8px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.item-list-info-pages ul li a {
+  font-family: var(--font-body-family);
+  color: black;
+}
+.item-list-info-pages ul li a:hover {
+  color: #9f7a49;
+}
+
+.item-list-info-title {
+  color: var(--white);
+  font-family: var(--font-body-family);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.item-list-info-price {
+  color: var(--white);
+  font-family: var(--font-body-family);
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+
+.info-badge {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  background: var(--badge-bg);
+  padding: 0.1rem 0.5rem;
+  border-radius: 1rem;
+  color: var(--badge-text);
+}
+
+@media (max-width: 730px) {
+  .nav_toggle {
+    display: block;
+  }
+  .nav_menu {
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    width: 100%;
+    background: var(--dropdown-bg);
+    display: none;
+    z-index: 9999;
+  }
+  .nav_menu.active {
+    display: block;
+  }
+  .nav_list {
+    display: block;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .nav_link {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+  }
+  .dropdown {
+    top: 0;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    box-shadow: none;
+    height: 0;
+    text-align: start;
+    transition: all 0.5s ease-in;
+    z-index: 9999;
+  }
+  .dropdown-pages {
+    top: 0;
+    left: 55%;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    box-shadow: none;
+    height: 0;
+    text-align: start;
+    transition: all 0.5s ease-in;
+  }
+  .nav_list_menu:hover .dropdown,
+  .nav_list_menu:hover .dropdown-pages {
+    height: 100%;
+    transition: all 0.5s ease-in;
+  }
+}
+@media (max-width: 365px) {
+  .logo-img {
+    width: 10rem;
+  }
+  .btn,
+  .btn-primary {
+    padding: 0.4rem 1rem;
+  }
+}
+.footer-area {
+  margin: 0 210px;
+  padding: 0 20px;
+}
+.footer-area .footer-content {
+  padding: 80px 0 18px;
+}
+.footer-area .footer-content .information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-area .footer-content .information .footer-block .top-title {
+  color: #9F7A49;
+  font-size: 24px;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.footer-area .footer-content .information .footer-block .footer-list li {
+  margin-bottom: 15px;
+}
+.footer-area .footer-content .information .footer-block .footer-list li a {
+  font-size: 16px;
+  font-family: "Jura", sans-serif;
+  color: black;
+  font-weight: 400;
+  transition: color 0.4s ease;
+}
+.footer-area .footer-content .information .footer-block .footer-list li:hover a {
+  color: #9F7A49;
+}
+.footer-area .footer-content .footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-area .footer-content .footer-icons .footer-blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px 150px 0;
+}
+.footer-area .footer-content .footer-icons .footer-blocks a img {
+  margin-bottom: 30px;
+}
+.footer-area .footer-content .footer-icons .footer-blocks .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 15px;
+}
+.footer-area .footer-content .footer-icons .footer-blocks .icons li {
+  margin: 0 5px;
+}
+.footer-area .footer-content .footer-icons .footer-blocks .icons a {
+  color: #000;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+.footer-area .footer-content .footer-icons .footer-blocks .icons a:hover {
+  color: #9F7A49;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Jura", sans-serif;
+}
+
+.sliders .swiper-slide .slide-text .top-title {
+  font-size: 28px;
+  color: #F3E0CA;
+}
+.sliders .swiper-slide .slide-text .bottom-title {
+  font-size: 40px;
+  color: #9F7A49;
+}
+
+.sliders {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.sliders .swiper-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.sliders .swiper-slide.active {
+  opacity: 1;
+}
+
+.sliders .swiper-slide .slide-text {
+  position: absolute;
+  top: 30%;
+  align-items: flex-end;
+  text-align: right;
+  left: 53%;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+.sliders .swiper-slide .slide-text .bottom-title {
+  margin: 15px 0;
+}
+.sliders .swiper-slide .slide-text .banner-button {
+  padding: 15px 0;
+}
+.sliders .swiper-slide .slide-text .banner-button a {
+  display: inline-block;
+  padding: 13px 40px;
+  background-color: transparent;
+  color: #9F7A49;
+  border: 0.888px solid #9F7A49;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.sliders .swiper-slide .slide-text .banner-button a:hover {
+  background-color: #9F7A49;
+  color: #fff;
+}
+
+.indicators {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+.indicators button {
+  color: #9F7A49;
+  background: #F3E0CA;
+  border: 1px solid #9F7A49;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.indicators button:hover {
+  background-color: #9F7A49;
+  color: #F3E0CA;
+}
+
+.banner-wrapper {
+  display: flex;
+  transition: transform 10s ease;
+}
+.banner-wrapper .banner-cart {
+  overflow: hidden;
+  position: relative;
+}
+.banner-wrapper .banner-cart .banner-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-wrapper .banner-cart .banner-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 2s ease;
+}
+.banner-wrapper .banner-cart .banner-image:hover img {
+  transform: scale(1.2);
+}
+.banner-wrapper .banner-cart .banner-text {
+  position: absolute;
+  align-items: flex-end;
+  text-align: end;
+  top: 50%;
+  right: 30px;
+  transform: translate(0, -50%);
+  max-width: 80%;
+}
+.banner-wrapper .banner-cart .banner-text .main-title {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #9F7A49;
+  font-family: "Tajawal", sans-serif;
+}
+.banner-wrapper .banner-cart .banner-text .sub-title {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-weight: 300;
+  font-family: "Jura", sans-serif;
+}
+.banner-wrapper .banner-cart .banner-text .banner-button {
+  display: inline-block;
+  padding: 8px 35px;
+  background-color: transparent;
+  color: #9F7A49;
+  border: 0.8px solid #9F7A49;
+  transition: background-color 0.7s ease;
+}
+.banner-wrapper .banner-cart .banner-text .banner-button:hover {
+  background-color: #9F7A49;
+  color: #fff;
+}
+
+.medium-text {
+  padding: 12px 0 8px;
+  width: 100%;
+  height: 560px;
+  background-image: url("//chrono-dial.myshopify.com/cdn/shop/files/chrono-img1.jpg?v=1613163886&width=1920");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.medium-text .medium-text-center {
+  padding: 20px;
+  margin: 0 210px;
+  align-items: end;
+  text-align: start;
+  width: 750px;
+  height: 350px;
+  position: relative;
+  top: 60%;
+  left: 20%;
+  transform: translateY(-50%);
+}
+.medium-text .medium-text-center .sub-heading {
+  margin-bottom: 5px;
+  font-family: "Jura", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: white;
+}
+.medium-text .medium-text-center .heading {
+  margin: 10px 0 13px;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: "Tajawal", sans-serif;
+  color: #9F7A49;
+}
+.medium-text .medium-text-center .banner-text {
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: "Jura", sans-serif;
+  color: #9C9C9C;
+}
+.medium-text .medium-text-center .banner-button a {
+  display: inline-block;
+  padding: 8px 35px;
+  background-color: transparent;
+  color: #9F7A49;
+  border: 0.8px solid #9F7A49;
+  transition: background-color 0.7s ease;
+  margin-top: 20px;
+}
+.medium-text .medium-text-center .banner-button a:hover {
+  background-color: #9F7A49;
+  color: #fff;
+}
+
+.watch-collection {
+  background-color: #d3d2d2;
+  padding: 100px 0;
+}
+.watch-collection .watch-title {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.watch-collection .watch-title h6 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.watch-collection .watch-title h2 {
+  font-size: 30px;
+  font-family: "Tajawal", sans-serif;
+}
+.watch-collection .watch-details .watchs-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.watch-collection .watch-details .watchs-list .watch-detail {
+  width: calc(16.666% - 10px);
+  margin: 0 20px;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+.watch-collection .watch-details .watchs-list .watch-detail:last-child {
+  margin-right: 0;
+}
+.watch-collection .watch-details .watchs-list .watch-detail .watch-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.watch-collection .watch-details .watchs-list .watch-detail .watch-option {
+  margin: 25px 15px 0;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+.watch-collection .watch-details .watchs-list .watch-detail .watch-option h3 {
+  margin: 5px 0;
+  color: black;
+  font-size: 18px;
+  font-family: "Tajawal", sans-serif;
+  transition: color 0.3s ease;
+}
+.watch-collection .watch-details .watchs-list .watch-detail .watch-option a {
+  margin-top: 15px;
+  font-size: 16px;
+  color: black;
+  transition: color 0.3s ease;
+}
+.watch-collection .watch-details .watchs-list .watch-detail .watch-option a:hover {
+  color: #9F7A49;
+}
+.watch-collection .watch-details .watchs-list .watch-detail:hover {
+  box-shadow: 0 0 10px rgba(98, 98, 98, 0.2);
+}
+
+.background {
+  padding: 12px 0 8px;
+  width: 100%;
+  height: auto;
+  background-image: url("//chrono-dial.myshopify.com/cdn/shop/files/chrono-img1.jpg?v=1613163886&width=1920");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.background .grid-banner {
+  margin: 0 210px;
+  padding: 100px 65px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.background .grid-banner .title-wrapper {
+  margin-bottom: 70px;
+}
+.background .grid-banner .title-wrapper .sub-heading {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Jura", sans-serif;
+  margin-bottom: 10px;
+  color: white;
+}
+.background .grid-banner .title-wrapper .title-h2 {
+  font-size: 30px;
+  color: #9F7A49;
+  margin-bottom: 10px;
+  font-family: "Tajawal", sans-serif;
+}
+
+.background .grid-banner .container {
+  max-width: 1200px;
+  width: 95%;
+}
+.background .grid-banner .container .slider-wrapper .image-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  font-size: 0;
+  cursor: grab;
+}
+.background .grid-banner .container .slider-wrapper .image-list .image-item {
+  width: 400px;
+  height: 360px;
+  object-fit: cover;
+}
+
+.background .grid-banner .container .slider-wrapper .slide-button {
+  position: absolute;
+  color: #9F7A49;
+  background: #F3E0CA;
+  border: 1px solid #9F7A49;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.background .grid-banner .container .slider-wrapper .slide-button:hover {
+  background-color: #9F7A49;
+  color: #F3E0CA;
+}
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.slider-wrapper #prev {
+  margin-right: auto;
+}
+.slider-wrapper #next {
+  margin-left: auto;
+}
+.slider-wrapper .image-list {
+  display: flex;
+  overflow-x: hidden;
+  margin: 0 10px;
+}
+.slider-wrapper .image-list .image-item {
+  margin-right: 10px;
+  width: 200px;
+  height: 150px;
+}
+
+.clock-slider {
+  background-color: rgb(239, 238, 238);
+}
+
+.clock-background {
+  margin: 0 210px;
+  padding: 100px 20px;
+  align-items: center;
+  text-align: center;
+}
+.clock-background .clock {
+  margin: 0 0 70px;
+}
+.clock-background .clock .top-title {
+  font-size: 16px;
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: black;
+}
+.clock-background .clock .bottom-title {
+  font-size: 30px;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: black;
+}
+
+.clock-background .swiper .swiper-wrapper {
+  padding: 0 0 60px;
+}
+.clock-background .swiper .swiper-pagination {
+  padding-top: 30px;
+}
+
+.background-img {
+  padding: 12px 0 8px;
+  width: 100%;
+  height: auto;
+  background-image: url(//chrono-dial.myshopify.com/cdn/shop/files/specification-banner.jpg?v=1621437492&width=1920);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.background-img .specification-banner {
+  margin: 0 209px;
+  padding: 124px 20px;
+  display: flex;
+  justify-content: center;
+}
+.background-img .specification-banner .empty-class {
+  width: 700px;
+}
+.background-img .specification-banner .addition-grids {
+  display: block;
+  justify-content: center;
+  text-align: left;
+}
+.background-img .specification-banner .addition-grids .heading .top-title {
+  color: white;
+  font-size: 16px;
+  font-family: "Jura", sans-serif;
+  font-weight: bolder;
+  margin: 0 0 20px;
+}
+.background-img .specification-banner .addition-grids .heading .middle-title {
+  color: #9F7A49;
+  font-size: 24px;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+.background-img .specification-banner .addition-grids .heading .bottom-title {
+  color: #9C9C9C;
+  font-family: "Jura", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 50px;
+}
+.background-img .specification-banner .addition-grids .additional_section_blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.background-img .specification-banner .addition-grids .additional_section_blocks .specification-block {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.background-img .specification-banner .addition-grids .additional_section_blocks .specification-block .icon-image {
+  position: relative;
+  overflow: hidden;
+}
+.background-img .specification-banner .addition-grids .additional_section_blocks .specification-block .icon-image img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+.background-img .specification-banner .addition-grids .additional_section_blocks .specification-block .icon-image::after {
+  content: "";
+  position: absolute;
+  top: 47%;
+  left: 40%;
+  width: 64px;
+  height: 64px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: transform 0.7s ease;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+}
+.background-img .specification-banner .addition-grids .additional_section_blocks .specification-block:hover .icon-image::after {
+  transform: translate(-50%, -50%) scale(3);
+}
+.background-img .specification-banner .addition-grids .additional_section_blocks .specification-block .content h5 a {
+  color: #9C9C9C;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Jura", sans-serif;
+  transition: color 0.3s ease;
+}
+.background-img .specification-banner .addition-grids .additional_section_blocks .specification-block .content h5:hover a {
+  color: #9F7A49;
+}
+
+.background-sale {
+  padding: 100px 0;
+  background-color: rgb(225, 225, 225);
+}
+.background-sale .collection {
+  align-items: center;
+  text-align: center;
+}
+.background-sale .collection .title-sale {
+  padding: 0 0 70px;
+}
+.background-sale .collection .title-sale h6 {
+  font-size: 16px;
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: black;
+}
+.background-sale .collection .title-sale h2 {
+  font-size: 30px;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: black;
+}
+.background-sale .collection .card-full .tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.background-sale .collection .card-full .tabs .tablinks {
+  padding: 8px 15px;
+}
+.background-sale .collection .card-full .sale-clock .card-list {
+  display: flex;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  margin: 0 30px;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-media {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-media img {
+  width: 342px;
+  height: 392px;
+  transition: opacity 0.5s;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-media img.sirv.image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-icon {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  transform: translateY(-20px);
+  transition: 0.5s;
+  opacity: 0;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-icon .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: black;
+  border-radius: 1px solid black;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-icon .sci {
+  display: flex;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-icon li {
+  margin: 0 15px;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-icon li a {
+  color: #9f7a49;
+  font-size: 20px;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card:hover .card-icon {
+  transform: translateY(-40px);
+  opacity: 1;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card:hover img.sirv.image-hover {
+  opacity: 1;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card:hover img.sirv.image-main {
+  opacity: 0;
+}
+
+.background-sale .collection .card-full .tabs {
+  gap: 40px;
+}
+.background-sale .collection .card-full .tabs .tablinks {
+  color: black;
+  transition: 0.4s;
+  position: relative;
+  cursor: pointer;
+}
+.background-sale .collection .card-full .tabs .tablinks.active {
+  color: #9F7A49;
+}
+.background-sale .collection .card-full .tabs .tablinks:hover {
+  color: #9F7A49;
+}
+.background-sale .collection .card-full .tabs .tablinks::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 120%;
+  height: 2px;
+  background-color: currentColor;
+}
+.background-sale .collection .card-full .sale-clock .card-list {
+  display: none;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-content {
+  margin-top: 20px;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-content .watch-name a {
+  font-size: 20px;
+  color: black;
+  font-weight: 400;
+  font-family: "Tajawal", sans-serif;
+  transition: 0.5s;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-content .watch-name:hover a:hover {
+  color: #9F7A49;
+}
+.background-sale .collection .card-full .sale-clock .card-list .card .card-content .price {
+  color: #565656;
+  font-family: "Jura", sans-serif;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+.latest-new {
+  padding: 100px 50px;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+}
+.latest-new .card_container {
+  position: relative;
+  width: 100%;
+  padding-top: 50px;
+}
+.latest-new .card_container .swiper-button-next,
+.latest-new .card_container .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-color: #F3E0CA;
+  color: #9F7A49;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.latest-new .card_container .swiper-button-next:hover,
+.latest-new .card_container .swiper-button-prev:hover {
+  background-color: #9F7A49;
+}
+.latest-new .card_container .custom-button:hover {
+  color: #F3E0CA;
+}
+.latest-new .card_container .swiper-button-next {
+  right: 0;
+}
+.latest-new .card_container .swiper-button-prev {
+  left: 0;
+}
+.latest-new .card_container .card_content {
+  display: flex;
+  justify-content: center;
+}
+.latest-new .card_container .card_content .card {
+  margin: 0 10px;
+  width: 461px;
+  height: 662px;
+  overflow: hidden;
+  border: 0.1px solid #838282;
+}
+.latest-new .card_container .card_content .card .card_detail {
+  padding: 40px;
+}
+.latest-new .card_container .card_content .card .card_detail .card_heading {
+  margin-bottom: 2rem;
+}
+.latest-new .card_container .card_content .card .card_detail .card_heading a {
+  color: #9C9C9C;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: "Tajawal", sans-serif;
+}
+.latest-new .card_container .card_content .card .card_detail .card_body {
+  margin-bottom: 12px;
+}
+.latest-new .card_container .card_content .card .card_detail .card_body .comment span {
+  color: #9C9C9C;
+}
+.latest-new .card_container .card_content .card .card_detail .card_body .card_word svg,
+.latest-new .card_container .card_content .card .card_detail .card_body .card_word span {
+  color: #9C9C9C;
+}
+.latest-new .card_container .card_content .card .card_detail .card_about {
+  color: #9C9C9C;
+  font-size: 16px;
+  font-family: "Jura", sans-serif;
+  font-weight: 400;
+  width: 350px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.latest-new .card_container .card_content .card .card_detail a.read-more {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 2px solid #9F7A49;
+  color: #9F7A49;
+  text-decoration: none;
+  transition: background-color 0.6s, color 0.6s;
+}
+.latest-new .card_container .card_content .card .card_detail a.read-more:hover {
+  background-color: #9F7A49;
+  color: white;
+}
+.latest-new .card_container .card_content .card .card_image {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.9s ease;
+}
+.latest-new .card_container .card_content .card .card_image .card_img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.9s ease;
+}
+.latest-new .card_container .card_content .card .card_image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid #9F7A49;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+.latest-new .card_container .card_content .card:hover .card_image img {
+  transform: scale(1.2);
+}
+.latest-new .card_container .card_content .card:hover .card_image::before {
+  opacity: 1;
+}
+.latest-new .words {
+  margin: 0 0 70px;
+}
+.latest-new .words .top-title {
+  font-size: 16px;
+  font-family: "Jura", sans-serif;
+  color: #9C9C9C;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.latest-new .words .bottom-title {
+  font-size: 30px;
+  font-family: "Tajawal", sans-serif;
+  color: #9C9C9C;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bottom-color {
+  background-color: black;
+  align-items: center;
+  text-align: center;
+}
+.bottom-color .bottom-area {
+  padding: 100px 40px 120px;
+}
+.bottom-color .bottom-area .bottom-title p {
+  color: #9C9C9C;
+  font-family: "Jura", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+}
+.bottom-color .bottom-area .bottom-title h2 {
+  font-family: "Tajawal", sans-serif;
+  color: #9C9C9C;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 18px 0;
+}
+.bottom-color .bottom-area .email-adres {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.bottom-color .bottom-area .email-adres input[type=email]:focus {
+  outline: none;
+  border-image: none;
+}
+.bottom-color .bottom-area .email-adres .email {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 0;
+  background-color: black;
+  box-sizing: border-box;
+  font-family: "Jura", sans-serif;
+  font-size: 18px;
+  border-bottom: 1px solid #565656;
+  transition: border-bottom 0.5s;
+}
+.bottom-color .bottom-area .email-adres .email::placeholder {
+  color: #b8b8b8;
+}
+.bottom-color .bottom-area .email-adres .email:focus {
+  border-bottom: 1px solid #9F7A49;
+}
+.bottom-color .bottom-area .email-adres .email-submit {
+  color: #9F7A49;
+  padding: 13px 40px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.8s, color 0.8s;
+  border-bottom: 1px solid #9F7A49;
+}
+.bottom-color .bottom-area .email-adres .email-submit:hover {
+  background-color: #9F7A49;
+  color: white;
+}
+.bottom-color .bottom-area .email-adres .email-submit .fa-solid {
+  margin-left: 5px;
+}
+.bottom-color .bottom-area .email-adres .email-submit .fa-solid:hover {
+  color: #fff;
+}

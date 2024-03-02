@@ -1,0 +1,1057 @@
+@import "header.scss";
+@import "footer.scss";
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Jura', sans-serif;
+
+}
+
+
+.sliders {
+    .swiper-slide {
+        .slide-text {
+            .top-title {
+                font-size: 28px;
+                color: #F3E0CA;
+            }
+
+            .bottom-title {
+                font-size: 40px;
+                color: #9F7A49;
+            }
+
+        }
+    }
+}
+
+.sliders {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    .swiper-slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}
+
+.sliders {
+    .swiper-slide {
+        .slide-text {
+            position: absolute;
+            top: 30%;
+            align-items: flex-end;
+            text-align: right;
+            left: 53%;
+            padding: 20px 0;
+            margin: 20px 0;
+
+            .bottom-title {
+                margin: 15px 0;
+            }
+
+            .banner-button {
+                padding: 15px 0;
+
+                a {
+                    display: inline-block;
+                    padding: 13px 40px;
+                    background-color: transparent;
+                    color: #9F7A49;
+                    border: 0.888px solid #9F7A49;
+                    transition: color 0.5s ease, background-color 0.5s ease;
+
+                    &:hover {
+                        background-color: #9F7A49;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.indicators {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+
+    button {
+        color: #9F7A49;
+        background: #F3E0CA;
+        border: 1px solid #9F7A49;
+        padding: 15px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: color 0.3s ease, background-color 0.3s ease;
+
+        &:hover {
+            background-color: #9F7A49;
+            color: #F3E0CA;
+        }
+    }
+}
+
+
+
+.banner-wrapper {
+    display: flex;
+    transition: transform 10s ease;
+
+    .banner-cart {
+        overflow: hidden;
+        position: relative;
+
+        .banner-image {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                transition: transform 2s ease;
+            }
+
+            &:hover img {
+                transform: scale(1.2);
+            }
+        }
+
+        .banner-text {
+            position: absolute;
+            align-items: flex-end;
+            text-align: end;
+            top: 50%;
+            right: 30px;
+            transform: translate(0, -50%);
+            max-width: 80%;
+
+            .main-title {
+                font-size: 40px;
+                font-weight: 400;
+                margin-bottom: 10px;
+                color: #9F7A49;
+                font-family: 'Tajawal', sans-serif;
+            }
+
+            .sub-title {
+                font-size: 16px;
+                margin-bottom: 30px;
+                color: #fff;
+                font-weight: 300;
+                font-family: 'Jura', sans-serif;
+            }
+
+            .banner-button {
+                display: inline-block;
+                padding: 8px 35px;
+                background-color: transparent;
+                color: #9F7A49;
+                border: 0.800px solid #9F7A49;
+                transition: background-color 0.7s ease;
+
+                &:hover {
+                    background-color: #9F7A49;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.medium-text {
+    padding: 12px 0 8px;
+    width: 100%;
+    height: 560px;
+    background-image: url('//chrono-dial.myshopify.com/cdn/shop/files/chrono-img1.jpg?v=1613163886&width=1920');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    .medium-text-center {
+        padding: 20px;
+        margin: 0 210px;
+        align-items: end;
+        text-align: start;
+        width: 750px;
+        height: 350px;
+        position: relative;
+        top: 60%;
+        left: 20%;
+        transform: translateY(-50%);
+
+        .sub-heading {
+            margin-bottom: 5px;
+            font-family: 'Jura', sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+            color: white;
+        }
+
+        .heading {
+            margin: 10px 0 13px;
+            font-size: 24px;
+            font-weight: 300;
+            font-family: 'Tajawal', sans-serif;
+            color: #9F7A49;
+        }
+
+        .banner-text {
+            margin-top: 20px;
+            font-size: 16px;
+            font-family: 'Jura', sans-serif;
+            color: #9C9C9C;
+        }
+
+        .banner-button a {
+            display: inline-block;
+            padding: 8px 35px;
+            background-color: transparent;
+            color: #9F7A49;
+            border: 0.800px solid #9F7A49;
+            transition: background-color 0.7s ease;
+            margin-top: 20px;
+
+            &:hover {
+                background-color: #9F7A49;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.watch-collection {
+    background-color: #d3d2d2;
+    padding: 100px 0;
+
+    .watch-title {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 70px;
+
+        h6 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-family: 'Tajawal', sans-serif;
+        }
+    }
+
+    .watch-details {
+        .watchs-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+
+            .watch-detail {
+                width: calc(16.666% - 10px);
+                margin: 0 20px;
+                box-sizing: border-box;
+                padding-bottom: 20px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                .watch-image {
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                }
+
+                .watch-option {
+                    margin: 25px 15px 0;
+                    text-align: center;
+                    transition: box-shadow 0.3s ease;
+
+                    h3 {
+                        margin: 5px 0;
+                        color: black;
+                        font-size: 18px;
+                        font-family: 'Tajawal', sans-serif;
+                        transition: color 0.3s ease;
+                    }
+
+                    a {
+                        margin-top: 15px;
+                        font-size: 16px;
+                        color: black;
+                        transition: color 0.3s ease;
+
+                        &:hover {
+                            color: #9F7A49;
+                        }
+                    }
+                }
+
+                &:hover {
+                    box-shadow: 0 0 10px rgba(98, 98, 98, 0.2);
+                }
+            }
+        }
+    }
+}
+
+
+
+.background {
+    padding: 12px 0 8px;
+    width: 100%;
+    height: auto;
+    background-image: url('//chrono-dial.myshopify.com/cdn/shop/files/chrono-img1.jpg?v=1613163886&width=1920');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    .grid-banner {
+        margin: 0 210px;
+        padding: 100px 65px;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 70px;
+
+        .title-wrapper {
+            margin-bottom: 70px;
+
+            .sub-heading {
+                font-size: 16px;
+                font-weight: bold;
+                font-family: 'Jura', sans-serif;
+                margin-bottom: 10px;
+                color: white;
+            }
+
+            .title-h2 {
+                font-size: 30px;
+                color: #9F7A49;
+                margin-bottom: 10px;
+                font-family: 'Tajawal', sans-serif;
+            }
+        }
+
+    }
+}
+
+.background {
+    .grid-banner {
+        .container {
+            max-width: 1200px;
+            width: 95%;
+
+            .slider-wrapper {
+                .image-list {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 15px;
+                    font-size: 0;
+                    cursor: grab;
+
+                    .image-item {
+                        width: 400px;
+                        height: 360px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.background {
+    .grid-banner {
+        .container {
+            .slider-wrapper {
+                .slide-button {
+                    position: absolute;
+                    color: #9F7A49;
+                    background: #F3E0CA;
+                    border: 1px solid #9F7A49;
+                    padding: 15px;
+                    font-size: 20px;
+                    cursor: pointer;
+                    transition: color 0.3s ease, background-color 0.3s ease;
+
+                    &:hover {
+                        background-color: #9F7A49;
+                        color: #F3E0CA;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    #prev {
+        margin-right: auto;
+    }
+
+    #next {
+        margin-left: auto;
+    }
+
+    .image-list {
+        display: flex;
+        overflow-x: hidden;
+        margin: 0 10px;
+
+        .image-item {
+            margin-right: 10px;
+            width: 200px;
+            height: 150px;
+        }
+    }
+}
+
+
+
+.clock-slider {
+    background-color: rgb(239, 238, 238);
+}
+
+.clock-background {
+    margin: 0 210px;
+    padding: 100px 20px;
+    align-items: center;
+    text-align: center;
+
+    .clock {
+        margin: 0 0 70px;
+
+        .top-title {
+            font-size: 16px;
+            font-family: 'Jura', sans-serif;
+            font-weight: 600;
+            margin: 0 0 10px;
+            color: black;
+        }
+
+        .bottom-title {
+            font-size: 30px;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            margin: 0 0 10px;
+            color: black;
+        }
+    }
+}
+
+.clock-background {
+    .swiper {
+        .swiper-wrapper {
+            padding: 0 0 60px;
+        }
+
+        .swiper-pagination {
+            padding-top: 30px;
+        }
+    }
+}
+
+.background-img {
+    padding: 12px 0 8px;
+    width: 100%;
+    height: auto;
+    background-image: url(//chrono-dial.myshopify.com/cdn/shop/files/specification-banner.jpg?v=1621437492&width=1920);
+    ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    .specification-banner {
+        margin: 0 209px;
+        padding: 124px 20px;
+        display: flex;
+        justify-content: center;
+
+        .empty-class {
+            width: 700px;
+        }
+
+        .addition-grids {
+            display: block;
+            justify-content: center;
+            text-align: left;
+
+            .heading {
+                .top-title {
+                    color: white;
+                    font-size: 16px;
+                    font-family: 'Jura', sans-serif;
+                    font-weight: bolder;
+                    margin: 0 0 20px;
+                }
+
+                .middle-title {
+                    color: #9F7A49;
+                    font-size: 24px;
+                    font-family: 'Tajawal', sans-serif;
+                    font-weight: 400;
+                    margin: 0 0 20px;
+                }
+
+                .bottom-title {
+                    color: #9C9C9C;
+                    font-family: 'Jura', sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin: 0 0 50px;
+                }
+            }
+
+            .additional_section_blocks {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+
+                .specification-block {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+
+                    .icon-image {
+                        position: relative;
+                        overflow: hidden;
+
+                        img {
+                            border-radius: 50%;
+                            width: 64px;
+                            height: 64px;
+                            object-fit: cover;
+                            margin-right: 20px;
+                            transition: transform 0.3s ease;
+                        }
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 47%;
+                            left: 40%;
+                            width: 64px;
+                            height: 64px;
+                            background-color: rgba(0, 0, 0, 0.5);
+                            transition: transform 0.7s ease;
+                            transform: translate(-50%, -50%) scale(0);
+                            border-radius: 50%;
+                        }
+                    }
+
+                    &:hover .icon-image::after {
+                        transform: translate(-50%, -50%) scale(3);
+                    }
+
+                    .content {
+                        h5 {
+                            a {
+                                color: #9C9C9C;
+                                font-size: 18px;
+                                font-weight: 400;
+                                font-family: 'Jura', sans-serif;
+                                transition: color 0.3s ease;
+                            }
+
+                            &:hover a {
+                                color: #9F7A49;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.background-sale {
+    padding: 100px 0;
+    background-color: rgb(225, 225, 225);
+
+    .collection {
+        align-items: center;
+        text-align: center;
+
+        .title-sale {
+            padding: 0 0 70px;
+
+            h6 {
+                font-size: 16px;
+                font-family: 'Jura', sans-serif;
+                font-weight: 600;
+                margin: 0 0 10px;
+                color: black;
+            }
+
+            h2 {
+                font-size: 30px;
+                font-family: 'Tajawal', sans-serif;
+                font-weight: 700;
+                margin: 0 0 10px;
+                color: black;
+            }
+        }
+
+        .card-full {
+            .tabs {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+
+                .tablinks {
+                    padding: 8px 15px;
+                }
+            }
+
+            .sale-clock {
+                .card-list {
+                    display: flex;
+
+                    .card {
+                        flex-grow: 1;
+                        position: relative;
+                        overflow: hidden;
+                        margin: 0 30px;
+
+                        .card-media {
+                            position: relative;
+                            overflow: hidden;
+                            max-width: 100%;
+
+                            img {
+                                width: 342px;
+                                height: 392px;
+                                transition: opacity 0.5s;
+                            }
+
+                            img.sirv.image-hover {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                left: 0;
+                                bottom: 0;
+                                object-fit: contain;
+                                opacity: 0;
+                                transition: opacity 0.8s;
+                            }
+                        }
+
+                        .card-icon {
+                            position: absolute;
+                            bottom: 50px;
+                            left: 0;
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                            transform: translateY(-20px);
+                            transition: 0.5s;
+                            opacity: 0;
+
+                            .icon {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border: black;
+                                border-radius: 1px solid black;
+                                width: 40px;
+                                height: 40px;
+                                background-color: white;
+                            }
+
+                            .sci {
+                                display: flex;
+                            }
+
+                            li {
+                                margin: 0 15px;
+
+                                a {
+                                    color: #9f7a49;
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            .card-icon {
+                                transform: translateY(-40px);
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    .card:hover img.sirv.image-hover {
+                        opacity: 1;
+                    }
+
+                    .card:hover img.sirv.image-main {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.background-sale {
+    .collection {
+        .card-full {
+
+            .tabs {
+                gap: 40px;
+
+                .tablinks {
+                    color: black;
+                    transition: 0.4s;
+                    position: relative;
+                    cursor: pointer;
+
+                    &.active {
+                        color: #9F7A49;
+                    }
+
+                    &:hover {
+                        color: #9F7A49;
+                    }
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        width: 120%;
+                        height: 2px;
+                        background-color: currentColor;
+                    }
+                }
+            }
+
+            .sale-clock {
+                .card-list {
+                    display: none;
+
+                    .card {
+                        .card-content {
+                            margin-top: 20px;
+
+                            .watch-name {
+                                a {
+                                    font-size: 20px;
+                                    color: black;
+                                    font-weight: 400;
+                                    font-family: 'Tajawal', sans-serif;
+                                    transition: 0.5s;
+                                }
+                            }
+
+                            .watch-name:hover a:hover {
+                                color: #9F7A49;
+                            }
+
+                            .price {
+                                color: #565656;
+                                font-family: 'Jura', sans-serif;
+                                font-weight: 300;
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.latest-new {
+    padding: 100px 50px;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+
+    .card_container {
+        position: relative;
+        width: 100%;
+        padding-top: 50px;
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            width: 50px;
+            height: 50px;
+            background-color: #F3E0CA;
+            color: #9F7A49;
+            border-radius: 1px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #9F7A49;
+            }
+        }
+
+        .custom-button:hover {
+            color: #F3E0CA;
+        }
+
+        .swiper-button-next {
+            right: 0;
+        }
+
+        .swiper-button-prev {
+            left: 0;
+        }
+
+        .card_content {
+            display: flex;
+            justify-content: center;
+
+            .card {
+                margin: 0 10px;
+                width: 461px;
+                height: 662px;
+                overflow: hidden;
+                border: 0.1px solid #838282;
+
+                .card_detail {
+                    padding: 40px;
+
+                    .card_heading {
+                        a {
+                            color: #9C9C9C;
+                            font-size: 25px;
+                            font-weight: 900;
+                            font-family: 'Tajawal', sans-serif;
+                        }
+
+                        margin-bottom: 2rem;
+                    }
+
+                    .card_body {
+                        margin-bottom: 12px;
+
+                        .comment {
+                            span {
+                                color: #9C9C9C;
+                            }
+                        }
+
+                        .card_word {
+
+                            svg,
+                            span {
+                                color: #9C9C9C;
+                            }
+                        }
+                    }
+
+                    .card_about {
+                        color: #9C9C9C;
+                        font-size: 16px;
+                        font-family: 'Jura', sans-serif;
+                        font-weight: 400;
+                        width: 350px;
+                        margin: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 40px;
+                    }
+
+                    a.read-more {
+                        display: inline-block;
+                        padding: 10px 30px;
+                        border: 2px solid #9F7A49;
+                        color: #9F7A49;
+                        text-decoration: none;
+                        transition: background-color 0.6s, color 0.6s;
+                    }
+
+                    a.read-more:hover {
+                        background-color: #9F7A49;
+                        color: white;
+                    }
+                }
+
+                .card_image {
+                    position: relative;
+                    overflow: hidden;
+                    transition: transform 0.9s ease;
+
+                    .card_img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        transition: transform 0.9s ease;
+                    }
+                }
+
+                .card_image::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    border: 3px solid #9F7A49;
+                    box-sizing: border-box;
+                    opacity: 0;
+                    transition: opacity 0.9s ease;
+                }
+
+                &:hover .card_image img {
+                    transform: scale(1.2);
+                }
+
+                &:hover .card_image::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .words {
+        margin: 0 0 70px;
+
+        .top-title {
+            font-size: 16px;
+            font-family: 'Jura', sans-serif;
+            color: #9C9C9C;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        .bottom-title {
+            font-size: 30px;
+            font-family: 'Tajawal', sans-serif;
+            color: #9C9C9C;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+.bottom-color {
+    background-color: black;
+    align-items: center;
+    text-align: center;
+
+    .bottom-area {
+        padding: 100px 40px 120px;
+
+        .bottom-title {
+            p {
+                color: #9C9C9C;
+                font-family: 'Jura', sans-serif;
+                font-size: 16px;
+                font-weight: 900;
+            }
+
+            h2 {
+                font-family: 'Tajawal', sans-serif;
+                color: #9C9C9C;
+                font-size: 30px;
+                font-weight: bold;
+                margin: 18px 0;
+            }
+        }
+
+        .email-adres {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+
+            input[type="email"]:focus {
+                outline: none;
+                border-image: none;
+            }
+
+            .email {
+                flex: 1;
+                padding: 10px;
+                margin-right: 10px;
+                border: 0;
+                background-color: black;
+                box-sizing: border-box;
+                font-family: 'Jura', sans-serif;
+                font-size: 18px;
+                border-bottom: 1px solid #565656;
+                transition: border-bottom 0.5s;
+
+                &::placeholder {
+
+                    color: #b8b8b8;
+                }
+
+                &:focus {
+
+                    border-bottom: 1px solid #9F7A49;
+                }
+            }
+
+            .email-submit {
+                color: #9F7A49;
+                padding: 13px 40px;
+                border: none;
+                cursor: pointer;
+                background-color: transparent;
+                transition: background-color 0.8s, color 0.8s;
+                border-bottom: 1px solid #9F7A49;
+
+                &:hover {
+                    background-color: #9F7A49;
+                    color: white;
+                }
+
+                .fa-solid {
+                    margin-left: 5px;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

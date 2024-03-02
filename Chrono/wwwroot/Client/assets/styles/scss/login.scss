@@ -1,0 +1,137 @@
+@import "header.scss";
+@import "footer.scss";
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600&display=swap');
+
+
+.top {
+    align-items: center;
+    text-align: center;
+    padding: 60px 0;
+    margin-bottom: 60px;
+    background-color: #f4f4f4;
+
+    .top_title {
+        margin: 0 210px;
+
+        .first_word {
+            color: black;
+            font-size: 36px;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+        }
+
+        .home {
+            color: black;
+            font-size: 16px;
+            font-family: 'Jura', sans-serif;
+            font-weight: 300;
+            transition: 0.4s ease;
+
+            &:hover {
+                color: #9F7A49;
+            }
+        }
+
+        .span_login {
+            color: black;
+            font-size: 16px;
+            font-family: 'Jura', sans-serif;
+            font-weight: 300;
+        }
+    }
+}
+
+
+.login_panel {
+    width: 600px;
+    height: 500px;
+    margin: 60px auto 120px;
+    padding: 30px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .top_title {
+        text-align: center;
+        margin-bottom: 20px;
+
+        .top_word {
+            margin-bottom: 10px;
+            font-size: 40px;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 600;
+            margin-bottom: 27px;
+        }
+
+        .create_account {
+            font-size: 16px;
+            text-align: center;
+            margin: 15px;
+            
+        }
+        a {
+            color: black;
+            text-decoration: none;
+            text-decoration: underline;
+
+            &:hover {
+                color: #9F7A49;
+            }
+        }
+    }
+
+    .email-adres {
+        max-width: 600px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 50px; 
+        gap: 20px;
+        input[type="email"],
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            box-sizing: border-box;
+            font-family: 'Jura', sans-serif;
+            font-size: 18px;
+            border-bottom: 1px solid #565656;
+            transition: border-bottom 0.5s;
+
+            &::placeholder {
+                color: #878787;
+            }
+
+            &:focus {
+                border-bottom: 1px solid #9F7A49;
+                outline: none;
+            }
+        }
+
+        .email {
+            margin-right: 10px;
+        }
+    }
+
+    button {
+        color: #9F7A49;
+        padding: 13px 40px;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        transition: background-color 0.8s, color 0.8s;
+        border: 1px solid #9F7A49;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Jura', sans-serif;
+        margin: 0 auto;
+
+        &:hover {
+            background-color: #9F7A49;
+            color: white;
+        }
+    }
+}
+
