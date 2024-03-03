@@ -2,12 +2,11 @@
 
 namespace Chrono.Controllers
 {
-    public class BlogController : Controller
+    public class ProductController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Model()
         {
             return View();
         }
-
     }
 }

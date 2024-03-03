@@ -29,3 +29,34 @@ C:\Users\Aydan\Desktop\Chrono\Chrono\obj\Debug\net6.0\Chrono.pdb
 C:\Users\Aydan\Desktop\Chrono\Chrono\obj\Debug\net6.0\Chrono.genruntimeconfig.cache
 C:\Users\Aydan\Desktop\Chrono\Chrono\obj\Debug\net6.0\ref\Chrono.dll
 C:\Users\Aydan\Desktop\Chrono\Chrono\obj\Debug\net6.0\scopedcss\Views\Shared\_ClientLayout.cshtml.rz.scp.css
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\bin\Debug\net6.0\appsettings.json
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\bin\Debug\net6.0\Chrono.staticwebassets.runtime.json
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\bin\Debug\net6.0\Chrono.exe
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\bin\Debug\net6.0\Chrono.deps.json
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\bin\Debug\net6.0\Chrono.runtimeconfig.json
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\bin\Debug\net6.0\Chrono.dll
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\bin\Debug\net6.0\Chrono.pdb
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\Chrono.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\Chrono.AssemblyInfoInputs.cache
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\Chrono.AssemblyInfo.cs
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\Chrono.csproj.CoreCompileInputs.cache
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\Chrono.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\Chrono.RazorAssemblyInfo.cache
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\Chrono.RazorAssemblyInfo.cs
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\Chrono.sourcelink.json
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\staticwebassets\msbuild.Chrono.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\staticwebassets\msbuild.build.Chrono.props
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Chrono.props
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Chrono.props
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\scopedcss\Views\Shared\_ClientLayout.cshtml.rz.scp.css
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\scopedcss\bundle\Chrono.styles.css
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\scopedcss\projectbundle\Chrono.bundle.scp.css
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\Chrono.dll
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\refint\Chrono.dll
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\Chrono.pdb
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\Chrono.genruntimeconfig.cache
+C:\Users\Hp\Desktop\New folder\Chrono\Chrono\obj\Debug\net6.0\ref\Chrono.dll
