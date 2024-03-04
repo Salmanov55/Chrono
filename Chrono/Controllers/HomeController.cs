@@ -1,5 +1,4 @@
-﻿using Chrono.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace Chrono.Controllers
