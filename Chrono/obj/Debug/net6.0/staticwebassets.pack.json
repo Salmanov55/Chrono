@@ -1,164 +1,276 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Chrono.bundle.scp.css",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Chrono.bundle.scp.css",
       "PackagePath": "staticwebassets\\Chrono.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\img\\1 (1).webp",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\img\\1 (1).webp",
       "PackagePath": "staticwebassets\\Client\\assets\\img\\1 (1).webp"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\img\\1_61c55587-cab7-41a3-b554-b8a935649c31.webp",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\img\\1_61c55587-cab7-41a3-b554-b8a935649c31.webp",
       "PackagePath": "staticwebassets\\Client\\assets\\img\\1_61c55587-cab7-41a3-b554-b8a935649c31.webp"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\img\\blog11.webp",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\img\\blog11.webp",
       "PackagePath": "staticwebassets\\Client\\assets\\img\\blog11.webp"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\img\\blog12.webp",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\img\\blog12.webp",
       "PackagePath": "staticwebassets\\Client\\assets\\img\\blog12.webp"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\img\\blog8.webp",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\img\\blog8.webp",
       "PackagePath": "staticwebassets\\Client\\assets\\img\\blog8.webp"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\img\\img2.webp",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\img\\img2.webp",
       "PackagePath": "staticwebassets\\Client\\assets\\img\\img2.webp"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\img\\logo.webp",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\img\\logo.webp",
       "PackagePath": "staticwebassets\\Client\\assets\\img\\logo.webp"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\img\\slider1-bg.webp",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\img\\slider1-bg.webp",
       "PackagePath": "staticwebassets\\Client\\assets\\img\\slider1-bg.webp"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\img\\slider2-bg.webp",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\img\\slider2-bg.webp",
       "PackagePath": "staticwebassets\\Client\\assets\\img\\slider2-bg.webp"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\img\\slider3-bg.webp",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\img\\slider3-bg.webp",
       "PackagePath": "staticwebassets\\Client\\assets\\img\\slider3-bg.webp"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\js\\blog.js",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\js\\blog.js",
       "PackagePath": "staticwebassets\\Client\\assets\\js\\blog.js"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\js\\brand.js",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\js\\brand.js",
       "PackagePath": "staticwebassets\\Client\\assets\\js\\brand.js"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\js\\login.js",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\js\\login.js",
       "PackagePath": "staticwebassets\\Client\\assets\\js\\login.js"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\js\\main.js",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\js\\main.js",
       "PackagePath": "staticwebassets\\Client\\assets\\js\\main.js"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\js\\model.js",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\js\\model.js",
       "PackagePath": "staticwebassets\\Client\\assets\\js\\model.js"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\js\\script.js",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\js\\script.js",
       "PackagePath": "staticwebassets\\Client\\assets\\js\\script.js"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\js\\shop.js",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\js\\shop.js",
       "PackagePath": "staticwebassets\\Client\\assets\\js\\shop.js"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\js\\slick.min.js",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\js\\slick.min.js",
       "PackagePath": "staticwebassets\\Client\\assets\\js\\slick.min.js"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\js\\watch.js",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\js\\watch.js",
       "PackagePath": "staticwebassets\\Client\\assets\\js\\watch.js"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\blog.css",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\blog.css",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\css\\blog.css"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\brand.css",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\brand.css",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\css\\brand.css"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\create.css",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\create.css",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\css\\create.css"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\login.css",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\login.css",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\css\\login.css"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\main.css",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\main.css",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\css\\main.css"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\model.css",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\model.css",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\css\\model.css"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\shop.css",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\shop.css",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\css\\shop.css"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\watch.css",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\css\\watch.css",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\css\\watch.css"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\_footer.scss",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\_footer.scss",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\scss\\_footer.scss"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\_header.scss",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\_header.scss",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\scss\\_header.scss"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\blog.scss",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\blog.scss",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\scss\\blog.scss"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\bootstrap-grid.min.scss",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\bootstrap-grid.min.scss",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\scss\\bootstrap-grid.min.scss"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\brand.scss",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\brand.scss",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\scss\\brand.scss"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\create.scss",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\create.scss",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\scss\\create.scss"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\login.scss",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\login.scss",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\scss\\login.scss"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\main.scss",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\main.scss",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\scss\\main.scss"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\model.scss",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\model.scss",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\scss\\model.scss"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\shop.scss",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\shop.scss",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\scss\\shop.scss"
     },
     {
-      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\watch.scss",
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Client\\assets\\styles\\scss\\watch.scss",
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\scss\\watch.scss"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\admin\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\css\\style.css",
+      "PackagePath": "staticwebassets\\admin\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\img\\testimonial-1.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\testimonial-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\img\\testimonial-2.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\testimonial-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\img\\user.jpg",
+      "PackagePath": "staticwebassets\\admin\\img\\user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\js\\main.js",
+      "PackagePath": "staticwebassets\\admin\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\chart\\chart.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\chart\\chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\easing\\easing.js"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\admin\\lib\\owlcarousel"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\admin\\lib\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\admin\\lib\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\tempusdominus\\js\\moment-timezone.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\tempusdominus\\js\\moment-timezone.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\tempusdominus\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\tempusdominus\\js\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\waypoints\\links.php",
+      "PackagePath": "staticwebassets\\admin\\lib\\waypoints\\links.php"
+    },
+    {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\lib\\waypoints\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\waypoints\\waypoints.min.js"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Chrono.Microsoft.AspNetCore.StaticWebAssets.props",

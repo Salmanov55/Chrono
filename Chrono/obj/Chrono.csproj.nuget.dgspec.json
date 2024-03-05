@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\Chrono.csproj": {}
+    "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\Chrono.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\Chrono.csproj": {
+    "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\Chrono.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\Chrono.csproj",
+        "projectUniqueName": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\Chrono.csproj",
         "projectName": "Chrono",
-        "projectPath": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\Chrono.csproj",
+        "projectPath": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\Chrono.csproj",
         "packagesPath": "C:\\Users\\Aydan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aydan\\Desktop\\Chrono-master\\Chrono\\obj\\",
+        "outputPath": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aydan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -63,6 +63,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
             }
           },
           "imports": [
