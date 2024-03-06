@@ -46,19 +46,19 @@
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Brand.Id)
+                @Html.DisplayFor(modelItem => item.Brand.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Material.Id)
+                @Html.DisplayFor(modelItem => item.Material.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Color.Id)
+                @Html.DisplayFor(modelItem => item.Color.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Size.Id)
+                @Html.DisplayFor(modelItem => item.Size.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Category.Id)
+                @Html.DisplayFor(modelItem => item.Category.Name)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
