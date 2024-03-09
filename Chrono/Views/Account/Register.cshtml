@@ -1,4 +1,6 @@
-﻿<section>
+﻿@model RegistrationVM
+
+<section>
     <div class="top">
         <div class="top_title">
             <h1 class="first_word">Create Account</h1>
@@ -12,19 +14,28 @@
 <section>
     <div class="login_panel">
         <div class="top_title">
-            <h1 class="top_word">Login</h1>
+            <h1 class="top_word">Registration</h1>
             <p class="create_accont">
                 Don't have an account yet?
-            </p>
+            </p>    
             <a href="login.html">Login</a>
         </div>
-        <div class="email-adres">
-            <input class="name" placeholder="First Name" type="text">
-            <input class="surname" placeholder="Last Name" type="text">
-            <input class="email" placeholder="Email Adress" type="email">
-            <input class="password" type="password" placeholder="Password">
-        </div>
-        <button>SIGN IN</button>
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <form method="post">
+            <div class="email-adres">
+                <input asp-for="FullName" class="name" placeholder="Full Name" type="text">
+                <span class="text-danger" asp-validation-for="FullName"></span>
+                <input asp-for="UserName" class="surname" placeholder="User Name" type="text">
+                <span class="text-danger" asp-validation-for="UserName"></span>
+                <input asp-for="Email" class="email" placeholder="Email Adress" type="email">
+                <span class="text-danger" asp-validation-for="Email"></span>
+                <input asp-for="Password" class="password" type="password" placeholder="Password">
+                <span class="text-danger" asp-validation-for="Password"></span>
+                <input asp-for="RepeatPassword" class="password" type="password" placeholder=" Repeat password">
+                <span class="text-danger" asp-validation-for="RepeatPassword"></span>
+            </div>
+            <button type="submit">Sign up</button>
+        </form>
     </div>
 </section>
 

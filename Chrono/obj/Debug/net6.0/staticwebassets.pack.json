@@ -161,6 +161,10 @@
       "PackagePath": "staticwebassets\\Client\\assets\\styles\\scss\\watch.scss"
     },
     {
+      "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Template\\Verify.html",
+      "PackagePath": "staticwebassets\\Template\\Verify.html"
+    },
+    {
       "Id": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\admin\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\admin\\css\\bootstrap.min.css"
     },

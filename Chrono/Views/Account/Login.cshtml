@@ -1,4 +1,4 @@
-﻿
+﻿@model LoginVM
 
 
 <section>
@@ -22,11 +22,16 @@
             <a asp-action="register">Create Account</a>
             <p>for free</p>
         </div>
-        <div class="email-adres">
-            <input class="email" placeholder="Email Adress" type="email">
-            <input class="password" type="password" placeholder="Password">
-        </div>
-        <button>SIGN IN</button>
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+       <form method="post">
+            <div class="email-adres">
+                <input asp-for=UserNameOrEmail class="email" placeholder="Email Adress" type="email">
+                <span class="text-danger" asp-validation-for="UserNameOrEmail"></span>
+                <input asp-for=Password class="password" type="password" placeholder="Password">
+                <span class="text-danger" asp-validation-for="Password"></span>
+            </div>
+            <button type="submit">SIGN IN</button>
+       </form>
     </div>
 </section>
 

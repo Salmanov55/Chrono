@@ -376,7 +376,7 @@
 
 .login_panel {
   width: 600px;
-  height: 500px;
+  height: auto;
   margin: 60px auto 120px;
   padding: 30px;
   background-color: #f4f4f4;

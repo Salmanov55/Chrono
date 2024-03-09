@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wgGP9X2OWaxQB79wz/p8mPR3q6/WcNSq9Bi74RH0z50=",
+  "Hash": "Pcojn6wuzNBHgBg749R226IrDbD5MyevK4g3leDzVe0=",
   "Source": "Chrono",
   "BasePath": "_content/Chrono",
   "Mode": "Default",
@@ -1188,6 +1188,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Client\\assets\\styles\\scss\\watch.scss"
+    },
+    {
+      "Identity": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\Template\\Verify.html",
+      "SourceId": "Chrono",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Aydan\\Desktop\\Chrono\\Chrono\\wwwroot\\",
+      "BasePath": "_content/Chrono",
+      "RelativePath": "Template/Verify.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Template\\Verify.html"
     }
   ]
 }
