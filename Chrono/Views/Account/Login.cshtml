@@ -22,13 +22,13 @@
             <a asp-action="register">Create Account</a>
             <p>for free</p>
         </div>
-        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div style="color:red" asp-validation-summary="ModelOnly"></div>
        <form method="post">
             <div class="email-adres">
                 <input asp-for=UserNameOrEmail class="email" placeholder="Email Adress" type="email">
-                <span class="text-danger" asp-validation-for="UserNameOrEmail"></span>
+                <span style="color:red" asp-validation-for="UserNameOrEmail"></span>
                 <input asp-for=Password class="password" type="password" placeholder="Password">
-                <span class="text-danger" asp-validation-for="Password"></span>
+                <span style="color:red" asp-validation-for="Password"></span>
             </div>
             <button type="submit">SIGN IN</button>
        </form>

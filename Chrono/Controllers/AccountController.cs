@@ -1,4 +1,5 @@
-﻿using Chrono.Models;
+﻿using Chrono.Enums;
+using Chrono.Models;
 using Chrono.ViewModels.AccountVM;
 using MailKit.Net.Smtp;
 using MailKit.Security;
@@ -156,6 +157,17 @@ namespace Chrono.Controllers
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction("login");
+        }
+
+
+        public async Task<IActionResult> CreateRoles()
+        {
+
+            foreach (var item in Enum.GetValues(typeof(EnumRoles)))
+            {
+                await _roleManager.CreateAsync(new IdentityRole { Name = item.ToString() });
+            }
+            return Content("elave edildi");
         }
     }
 }

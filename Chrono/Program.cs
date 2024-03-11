@@ -1,5 +1,6 @@
 using Chrono.DAL;
 using Chrono.Models;
+using Chrono.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,6 +11,8 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<AppDbContext>(option =>
 option.UseSqlServer(builder.Configuration.GetConnectionString("default")));
+
+builder.Services.AddScoped<LayoutService>();
 
 builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
 {

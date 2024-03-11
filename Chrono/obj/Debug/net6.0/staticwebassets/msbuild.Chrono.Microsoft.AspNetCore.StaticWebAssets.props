@@ -464,6 +464,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Chrono.bundle.scp.css))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\0264f8e7-29bb-4e85-bc6b-73db1b6489dcwomen-watch-500x500.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/0264f8e7-29bb-4e85-bc6b-73db1b6489dcwomen-watch-500x500.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\0264f8e7-29bb-4e85-bc6b-73db1b6489dcwomen-watch-500x500.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\09f1fb56-56e8-40ba-953a-a5c15f4ca6ae1_2ce6bd75-0c61-416e-9998-019e921155bf.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/09f1fb56-56e8-40ba-953a-a5c15f4ca6ae1_2ce6bd75-0c61-416e-9998-019e921155bf.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\09f1fb56-56e8-40ba-953a-a5c15f4ca6ae1_2ce6bd75-0c61-416e-9998-019e921155bf.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\1 (1).webp))">
       <SourceType>Package</SourceType>
       <SourceId>Chrono</SourceId>
@@ -495,6 +527,150 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\1_61c55587-cab7-41a3-b554-b8a935649c31.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\22f0d536-f721-46ad-9acb-eca52c58bb5aFS5991_main.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/22f0d536-f721-46ad-9acb-eca52c58bb5aFS5991_main.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\22f0d536-f721-46ad-9acb-eca52c58bb5aFS5991_main.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\3fec895e-10cc-4fae-95ad-ce0145a7327971VxRe7HeKL._AC_UY1000_.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/3fec895e-10cc-4fae-95ad-ce0145a7327971VxRe7HeKL._AC_UY1000_.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\3fec895e-10cc-4fae-95ad-ce0145a7327971VxRe7HeKL._AC_UY1000_.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\4f963bc9-f287-41db-b480-c4973cd2dd3161ZjlBOp+rL._AC_UF1000,1000_QL80_.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/4f963bc9-f287-41db-b480-c4973cd2dd3161ZjlBOp+rL._AC_UF1000,1000_QL80_.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\4f963bc9-f287-41db-b480-c4973cd2dd3161ZjlBOp+rL._AC_UF1000,1000_QL80_.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\697ee164-a42e-4a4a-87d1-239d593dc8d83_ea3cc821-0b3f-4318-93a9-47790c55c040.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/697ee164-a42e-4a4a-87d1-239d593dc8d83_ea3cc821-0b3f-4318-93a9-47790c55c040.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\697ee164-a42e-4a4a-87d1-239d593dc8d83_ea3cc821-0b3f-4318-93a9-47790c55c040.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\772e4b98-c346-4308-ab35-1833340f8340istockphoto-1359180038-612x612.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/772e4b98-c346-4308-ab35-1833340f8340istockphoto-1359180038-612x612.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\772e4b98-c346-4308-ab35-1833340f8340istockphoto-1359180038-612x612.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\7d46353e-8bf5-4c2a-8dc1-172c0c3eff3d71VxRe7HeKL._AC_UY1000_.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/7d46353e-8bf5-4c2a-8dc1-172c0c3eff3d71VxRe7HeKL._AC_UY1000_.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\7d46353e-8bf5-4c2a-8dc1-172c0c3eff3d71VxRe7HeKL._AC_UY1000_.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\7d5481fb-7aa9-497f-af93-e5405af905ca61ZjlBOp+rL._AC_UF1000,1000_QL80_.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/7d5481fb-7aa9-497f-af93-e5405af905ca61ZjlBOp+rL._AC_UF1000,1000_QL80_.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\7d5481fb-7aa9-497f-af93-e5405af905ca61ZjlBOp+rL._AC_UF1000,1000_QL80_.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\7ffbd021-2aaa-46e2-a0e2-83e2836b3ad86_5207b368-2bc2-42ab-b8f4-e18aef5908b8.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/7ffbd021-2aaa-46e2-a0e2-83e2836b3ad86_5207b368-2bc2-42ab-b8f4-e18aef5908b8.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\7ffbd021-2aaa-46e2-a0e2-83e2836b3ad86_5207b368-2bc2-42ab-b8f4-e18aef5908b8.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\9fbab5f9-4c54-4ef6-bd51-6e4e7bd452f84_cb6e4fcb-b711-440e-a192-2818686a6ad2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/9fbab5f9-4c54-4ef6-bd51-6e4e7bd452f84_cb6e4fcb-b711-440e-a192-2818686a6ad2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\9fbab5f9-4c54-4ef6-bd51-6e4e7bd452f84_cb6e4fcb-b711-440e-a192-2818686a6ad2.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\blog11.webp))">
       <SourceType>Package</SourceType>
@@ -543,6 +719,134 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\blog8.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\c388bbe6-8c93-49e6-86ac-7543169b4c15istockphoto-1359180038-612x612.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/c388bbe6-8c93-49e6-86ac-7543169b4c15istockphoto-1359180038-612x612.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\c388bbe6-8c93-49e6-86ac-7543169b4c15istockphoto-1359180038-612x612.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\d02fb829-a359-4d9f-b8ff-b37e9f09e6fd71VxRe7HeKL._AC_UY1000_.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/d02fb829-a359-4d9f-b8ff-b37e9f09e6fd71VxRe7HeKL._AC_UY1000_.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\d02fb829-a359-4d9f-b8ff-b37e9f09e6fd71VxRe7HeKL._AC_UY1000_.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\d0f5980c-6fc1-4723-b04b-d60f83d36ecawomen-watch-500x500.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/d0f5980c-6fc1-4723-b04b-d60f83d36ecawomen-watch-500x500.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\d0f5980c-6fc1-4723-b04b-d60f83d36ecawomen-watch-500x500.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\eccfd456-6773-4c21-a286-58a81cd457e1wefew.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/eccfd456-6773-4c21-a286-58a81cd457e1wefew.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\eccfd456-6773-4c21-a286-58a81cd457e1wefew.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\eebaffd5-4259-4249-bdd2-b53ee2cbdc194_cb6e4fcb-b711-440e-a192-2818686a6ad2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/eebaffd5-4259-4249-bdd2-b53ee2cbdc194_cb6e4fcb-b711-440e-a192-2818686a6ad2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\eebaffd5-4259-4249-bdd2-b53ee2cbdc194_cb6e4fcb-b711-440e-a192-2818686a6ad2.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\f587c8cc-52e6-4933-a5c3-acfa783fcd81istockphoto-1359180038-612x612.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/f587c8cc-52e6-4933-a5c3-acfa783fcd81istockphoto-1359180038-612x612.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\f587c8cc-52e6-4933-a5c3-acfa783fcd81istockphoto-1359180038-612x612.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\f7d9bdc4-1c24-4960-bcd8-d41a7b25a5ba2_224e9460-2f81-4a60-8874-8c1236e72252.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/f7d9bdc4-1c24-4960-bcd8-d41a7b25a5ba2_224e9460-2f81-4a60-8874-8c1236e72252.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\f7d9bdc4-1c24-4960-bcd8-d41a7b25a5ba2_224e9460-2f81-4a60-8874-8c1236e72252.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\febb1f4a-1212-43f9-ad62-c827cd7379372_224e9460-2f81-4a60-8874-8c1236e72252.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chrono</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chrono</BasePath>
+      <RelativePath>Client/assets/img/febb1f4a-1212-43f9-ad62-c827cd7379372_224e9460-2f81-4a60-8874-8c1236e72252.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\febb1f4a-1212-43f9-ad62-c827cd7379372_224e9460-2f81-4a60-8874-8c1236e72252.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Client\assets\img\img2.webp))">
       <SourceType>Package</SourceType>

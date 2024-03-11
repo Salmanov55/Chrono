@@ -20,19 +20,19 @@
             </p>    
             <a href="login.html">Login</a>
         </div>
-        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div style="color:red" asp-validation-summary="ModelOnly"></div>
         <form method="post">
             <div class="email-adres">
                 <input asp-for="FullName" class="name" placeholder="Full Name" type="text">
-                <span class="text-danger" asp-validation-for="FullName"></span>
+                <span style="color:red" asp-validation-for="FullName"></span>
                 <input asp-for="UserName" class="surname" placeholder="User Name" type="text">
-                <span class="text-danger" asp-validation-for="UserName"></span>
+                <span style="color:red" asp-validation-for="UserName"></span>
                 <input asp-for="Email" class="email" placeholder="Email Adress" type="email">
-                <span class="text-danger" asp-validation-for="Email"></span>
+                <span style="color:red" asp-validation-for="Email"></span>
                 <input asp-for="Password" class="password" type="password" placeholder="Password">
-                <span class="text-danger" asp-validation-for="Password"></span>
+                <span style="color:red" asp-validation-for="Password"></span>
                 <input asp-for="RepeatPassword" class="password" type="password" placeholder=" Repeat password">
-                <span class="text-danger" asp-validation-for="RepeatPassword"></span>
+                <span style="color:red" asp-validation-for="RepeatPassword"></span>
             </div>
             <button type="submit">Sign up</button>
         </form>
@@ -50,5 +50,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Client/assets/styles/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="~/Client/assets/styles/css/create.css">
 }

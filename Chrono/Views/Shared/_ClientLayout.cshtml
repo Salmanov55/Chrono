@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿
+@inject Chrono.Services.LayoutService service
+
+
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -37,115 +42,26 @@
                         </a>
                         <div class="dropdown">
                             <div class="dropdown-inner">
-                                <div class="dropdown-item">
-                                    <div class="item-list">
-                                        <div class="item-img">
-                                            <img class="product-item-img"
-                                                 src="~/Client/assets/img/1_61c55587-cab7-41a3-b554-b8a935649c31.webp"
-                                                 alt="Icon" />
-                                            <div class="item-list-info">
-                                                <a href="shop.html">
-                                                    <span class="item-list-info-title">
-                                                        Black 3 in 1 Analog
-                                                        Stainless Steel
-                                                    </span>
-                                                    <span class="item-list-info-price">13,90</span>
-                                                </a>
+                                @foreach (var item in await service.GetProductsNav())
+                                {
+                                    <div class="dropdown-item">
+                                        <div class="item-list">
+                                            <div class="item-img">
+                                                <img style="width:100%" class="product-item-img"
+                                                     src="~/Client/assets/img/@item.ProductImages.FirstOrDefault().ImageUrl"
+                                                     alt="Icon" />
+                                                <div class="item-list-info">
+                                                    <a href="shop.html">
+                                                        <span class="item-list-info-title">
+                                                            @item.Name
+                                                        </span>
+                                                        <span class="item-list-info-price">@item.Price</span>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="dropdown-item">
-                                    <div class="item-list">
-                                        <div class="item-img">
-                                            <img class="product-item-img"
-                                                 src="~/Client/assets/img/1_61c55587-cab7-41a3-b554-b8a935649c31.webp"
-                                                 alt="Icon" />
-                                            <div class="item-list-info">
-                                                <a href="shop.html">
-                                                    <span class="item-list-info-title">
-                                                        Black 3 in 1 Analog
-                                                        Stainless Steel
-                                                    </span>
-                                                    <span class="item-list-info-price">13,90</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dropdown-item">
-                                    <div class="item-list">
-                                        <div class="item-img">
-                                            <img class="product-item-img"
-                                                 src="~/Client/assets/img/1_61c55587-cab7-41a3-b554-b8a935649c31.webp"
-                                                 alt="Icon" />
-                                            <div class="item-list-info">
-                                                <a href="shop.html">
-                                                    <span class="item-list-info-title">
-                                                        Black 3 in 1 Analog
-                                                        Stainless Steel
-                                                    </span>
-                                                    <span class="item-list-info-price">13,90</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dropdown-item">
-                                    <div class="item-list">
-                                        <div class="item-img">
-                                            <img class="product-item-img"
-                                                 src="~/Client/assets/img/1_61c55587-cab7-41a3-b554-b8a935649c31.webp"
-                                                 alt="Icon" />
-                                            <div class="item-list-info">
-                                                <a href="shop.html">
-                                                    <span class="item-list-info-title">
-                                                        Black 3 in 1 Analog
-                                                        Stainless Steel
-                                                    </span>
-                                                    <span class="item-list-info-price">13,90</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dropdown-item">
-                                    <div class="item-list">
-                                        <div class="item-img">
-                                            <img class="product-item-img"
-                                                 src="~/Client/assets/img/1_61c55587-cab7-41a3-b554-b8a935649c31.webp"
-                                                 alt="Icon" />
-                                            <div class="item-list-info">
-                                                <a href="shop.html">
-                                                    <span class="item-list-info-title">
-                                                        Black 3 in 1 Analog
-                                                        Stainless Steel
-                                                    </span>
-                                                    <span class="item-list-info-price">13,90</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dropdown-item">
-                                    <div class="item-list">
-                                        <div class="item-img">
-                                            <img class="product-item-img"
-                                                 src="~/Client/assets/img/1_61c55587-cab7-41a3-b554-b8a935649c31.webp"
-                                                 alt="Icon" />
-                                            <div class="item-list-info">
-                                                <a href="shop.html">
-                                                    <span class="item-list-info-title">
-                                                        Black 3 in 1 Analog
-                                                        Stainless Steel
-                                                    </span>
-                                                    <span class="item-list-info-price">13,90</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+                                }
                             </div>
                         </div>
                     </li>
@@ -190,6 +106,12 @@
                     </li>
                 </ul>
                 <div class="nav_action">
+                    @{
+                        if (User.Identity.IsAuthenticated)
+                        {
+                            <a asp-controller="account" asp-action="logout" class="nav-link"><span>@await service.GetUserName()</span> Log Out</a>
+                        }
+                    }
                     <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
                     <a asp-action="login" asp-controller="account"><i class="fa-solid fa-user"></i></a>
                     <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>

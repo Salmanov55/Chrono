@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Chrono.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240303203918_inithial")]
-    partial class inithial
+    [Migration("20240309201827_new")]
+    partial class @new
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

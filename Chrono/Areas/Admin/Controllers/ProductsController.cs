@@ -1,5 +1,7 @@
 ﻿using Chrono.DAL;
+using Chrono.Extensions;
 using Chrono.Models;
+using Chrono.ViewModels.ProductsVM;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,13 +12,14 @@ namespace Chrono.Areas.Admin.Controllers
     public class ProductsController : Controller
     {
         private readonly AppDbContext _context;
+        readonly IWebHostEnvironment _env;
 
-        public ProductsController(AppDbContext context)
+        public ProductsController(AppDbContext context, IWebHostEnvironment env)
         {
             _context = context;
+            _env = env;
         }
 
-        // GET: Admin/Products
         public async Task<IActionResult> Index()
         {
             var appDbContext = _context.Products
@@ -29,7 +32,6 @@ namespace Chrono.Areas.Admin.Controllers
             return View(await appDbContext);
         }
 
-        // GET: Admin/Products/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Products == null)
@@ -52,97 +54,188 @@ namespace Chrono.Areas.Admin.Controllers
             return View(product);
         }
 
-        // GET: Admin/Products/Create
         public IActionResult Create()
         {
-            ViewData["BrandId"] = new SelectList(_context.Brands, "Id", "Id");
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Id");
-            ViewData["ColorId"] = new SelectList(_context.Colors, "Id", "Id");
-            ViewData["MaterialId"] = new SelectList(_context.Materials, "Id", "Id");
-            ViewData["SizeId"] = new SelectList(_context.Sizes, "Id", "Id");
+            ViewData["BrandId"] = new SelectList(_context.Brands, "Id", "Name");
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name");
+            ViewData["ColorId"] = new SelectList(_context.Colors, "Id", "Name");
+            ViewData["MaterialId"] = new SelectList(_context.Materials, "Id", "Name");
+            ViewData["SizeId"] = new SelectList(_context.Sizes, "Id", "Name");
             return View();
         }
 
-        // POST: Admin/Products/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Name,Price,BrandId,MaterialId,ColorId,SizeId,CategoryId,Id")] Product product)
+        public async Task<IActionResult> Create(ProductCreateVM productVM)
         {
-            if (ModelState.IsValid)
+            ViewData["BrandId"] = new SelectList(_context.Brands, "Id", "Name", productVM.BrandId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name", productVM.CategoryId);
+            ViewData["ColorId"] = new SelectList(_context.Colors, "Id", "Name", productVM.ColorId);
+            ViewData["MaterialId"] = new SelectList(_context.Materials, "Id", "Name", productVM.MaterialId);
+            ViewData["SizeId"] = new SelectList(_context.Sizes, "Id", "Name", productVM.SizeId);
+
+            if (!ModelState.IsValid)
             {
-                _context.Add(product);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return View(productVM);
             }
-            ViewData["BrandId"] = new SelectList(_context.Brands, "Id", "Id", product.BrandId);
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Id", product.CategoryId);
-            ViewData["ColorId"] = new SelectList(_context.Colors, "Id", "Id", product.ColorId);
-            ViewData["MaterialId"] = new SelectList(_context.Materials, "Id", "Id", product.MaterialId);
-            ViewData["SizeId"] = new SelectList(_context.Sizes, "Id", "Id", product.SizeId);
-            return View(product);
+
+            var existProd = _context.Products.Any(x => x.Name == productVM.Name);
+            if (existProd)
+            {
+                ModelState.AddModelError("Name", "Bu adla product movcuddu !");
+                return View(productVM);
+            }
+            List<ProductImage> images = new();
+            foreach (var item in productVM.Photos)
+            {
+                if (item.CheckImageSize(5))
+                {
+                    ModelState.AddModelError("Photos", "Size duzgun deil !");
+                    View();
+                }
+                if (!item.CheckImageType())
+                {
+                    ModelState.AddModelError("Photos", "Only image !");
+                    View();
+                }
+                ProductImage image = new();
+
+                image.ImageUrl = item.SaveImage(_env, "Client/assets/img");
+                images.Add(image);
+            }
+
+            Product product = new Product()
+            {
+                Name = productVM.Name,
+                BrandId = productVM.BrandId,
+                CategoryId = productVM.CategoryId,
+                SizeId = productVM.SizeId,
+                ColorId = productVM.ColorId,
+                MaterialId = productVM.MaterialId,
+                Price = productVM.Price,
+            };
+
+            product.ProductImages = images;
+
+            _context.Add(product);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+
         }
 
-        // GET: Admin/Products/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(int? id, int? imgId)
         {
+
             if (id == null || _context.Products == null)
             {
                 return NotFound();
             }
 
-            var product = await _context.Products.FindAsync(id);
+            var product = await _context.Products.Include(p => p.ProductImages).FirstOrDefaultAsync(p => p.Id == id);
             if (product == null)
             {
                 return NotFound();
             }
-            ViewData["BrandId"] = new SelectList(_context.Brands, "Id", "Id", product.BrandId);
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Id", product.CategoryId);
-            ViewData["ColorId"] = new SelectList(_context.Colors, "Id", "Id", product.ColorId);
-            ViewData["MaterialId"] = new SelectList(_context.Materials, "Id", "Id", product.MaterialId);
-            ViewData["SizeId"] = new SelectList(_context.Sizes, "Id", "Id", product.SizeId);
-            return View(product);
+
+
+
+            if (imgId != null)
+            {
+                var image = product.ProductImages.FirstOrDefault(p => p.Id == imgId);
+                if (image != null)
+                {
+                    product.ProductImages.Remove(image);
+                    _context.SaveChanges();
+                }
+
+                if (System.IO.File.Exists(Path.Combine(_env.WebRootPath, "Client/assets/img", image.ImageUrl)))
+                {
+                    System.IO.File.Delete(Path.Combine(_env.WebRootPath, "Client/assets/img", image.ImageUrl));
+                }
+            }
+
+
+
+            ProductEditVM vm = new ProductEditVM()
+            {
+                BrandId = product.BrandId,
+                CategoryId = product.CategoryId,
+                SizeId = product.SizeId,
+                ColorId = product.ColorId,
+                MaterialId = product.MaterialId,
+                Price = product.Price,
+                Name = product.Name,
+                ProductImages = product.ProductImages,
+            };
+
+
+            ViewData["BrandId"] = new SelectList(_context.Brands, "Id", "Name", product.BrandId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name", product.CategoryId);
+            ViewData["ColorId"] = new SelectList(_context.Colors, "Id", "Name", product.ColorId);
+            ViewData["MaterialId"] = new SelectList(_context.Materials, "Id", "Name", product.MaterialId);
+            ViewData["SizeId"] = new SelectList(_context.Sizes, "Id", "Name", product.SizeId);
+
+            return View(vm);
         }
 
-        // POST: Admin/Products/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Name,Price,BrandId,MaterialId,ColorId,SizeId,CategoryId,Id")] Product product)
+        public async Task<IActionResult> Edit(int id, ProductEditVM productVM)
         {
-            if (id != product.Id)
+            ViewData["BrandId"] = new SelectList(_context.Brands, "Id", "Name", productVM.BrandId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name", productVM.CategoryId);
+            ViewData["ColorId"] = new SelectList(_context.Colors, "Id", "Name", productVM.ColorId);
+            ViewData["MaterialId"] = new SelectList(_context.Materials, "Id", "Name", productVM.MaterialId);
+            ViewData["SizeId"] = new SelectList(_context.Sizes, "Id", "Name", productVM.SizeId);
+
+
+            Product product = await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
+            if (id != productVM.Id || product == null)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                try
-                {
-                    _context.Update(product);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ProductExists(product.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                return View(productVM);
             }
-            ViewData["BrandId"] = new SelectList(_context.Brands, "Id", "Id", product.BrandId);
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Id", product.CategoryId);
-            ViewData["ColorId"] = new SelectList(_context.Colors, "Id", "Id", product.ColorId);
-            ViewData["MaterialId"] = new SelectList(_context.Materials, "Id", "Id", product.MaterialId);
-            ViewData["SizeId"] = new SelectList(_context.Sizes, "Id", "Id", product.SizeId);
-            return View(product);
+
+            if (productVM.Photos.Length > 0)
+            {
+                foreach (var item in productVM.Photos)
+                {
+                    if (item.CheckImageSize(5))
+                    {
+                        ModelState.AddModelError("Photos", "Size duzgun deil !");
+                        View();
+                    }
+                    if (!item.CheckImageType())
+                    {
+                        ModelState.AddModelError("Photos", "Only image !");
+                        View();
+                    }
+                    ProductImage image = new();
+
+                    image.ImageUrl = item.SaveImage(_env, "Client/assets/img");
+                    if (product.ProductImages == null)
+                    {
+                        product.ProductImages = new();
+                    }
+                    product.ProductImages.Add(image);
+                }
+            }
+
+            product.Price = productVM.Price;
+            product.CategoryId = productVM.CategoryId;
+            product.SizeId = productVM.SizeId;
+            product.ColorId = productVM.ColorId;
+            product.Name = productVM.Name;
+            product.MaterialId = productVM.MaterialId;
+            product.BrandId = productVM.BrandId;
+            
+            _context.SaveChanges();
+
+            return RedirectToAction("index", "products");
         }
 
         // GET: Admin/Products/Delete/5
