@@ -115,7 +115,7 @@ namespace Chrono.Controllers
 
             using SmtpClient smtp = new SmtpClient();
             smtp.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-            smtp.Authenticate("qurban231293@gmail.com", "olszimzdwkxyjwwz"); // bura oz mailivi yazarsan
+            smtp.Authenticate("qurban231293@gmail.com", "olszimzdwkxyjwwz");
             smtp.Send(email);
             smtp.Disconnect(true);
 
